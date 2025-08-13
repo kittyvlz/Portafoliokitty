@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eacbcb;
+}
+/* el header*/
+.encabezado {
+    height: 150px;
+    color: #eacbcb;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.763) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.184) 100%), url(imagenes/banner.jpeg);
+    background-size: cover;
+    display: flex;
+}
+h1{
+    color: #e2b9b9;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+/* BARRA DE NAVEGACION*/
+.menu{
+    background-color: #6b4f4f;
+    display: flex;
+    padding: 0;
+    ;
+
+}
+.item_menu{
+    list-style: none; display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #aecbcb;
+    text-align: center;
+    margin:0;
+
+}
+.item_link{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+}
+.item_link:hover{
+    color: #6b4f4f;
+    background-color: #f7f7f7;
+    border: 2px solid #6b4f4f;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+
+.image_slide{
+    background: linear-gradient(80deg, rgba(0, 0, 0, 0.763) 0%, rgba(7, 1, 1, 0.5) 35%, rgba(0, 0, 0, 0.184) 60%), url(imagenes/cuentos_selva.jpg);
+    width: 100%;
+    height:50%;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+}
+.image_slide ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.image_slide li{
+    width: 100%;
+    list-style: none;
+    position: relative; 
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0,250px;
+    top: 250px;
+    color: aliceblue;
+
+}
+
+.texto h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+image_slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+@keyframes slide{
+    0%{
+    margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -100% ;
+    }
+    45%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: -300%;
+    }
+}
+article{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #edd2d2;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo_seccion--principal{
+    font-size: 2rem;
+    color: #5c032b;
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.titulo_seccion{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #5c032b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #eacbcb;
+    margin: 10px;
+}
+
+#about, #portfolio, #contact{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #eacbcb;
+
+}
+#about  {
+    background-color: #683c51;
+
+}
+.foto_perfil {
+    display: flex;
+}
+.foto_perfil img{
+    padding: 0px 20px;
+    box-sizing: content-box;
+    width: 90px;
+    border-radius:20px;
+    }
+
+
+.foto_perfil p{
+    text-align: start;
+}
+
+#portfolio{
+    background-color: #4c1e33;
+}
+
+#contact{
+    background-color: #340319;
+}
+.lista-redes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.lista-redes a {
+    text-decoration: none;
+    color: #5c032b;
+    font-weight: bold;
+    background-color: #e2b9b9;
+    border-radius: 5px;
+    padding: 3px;
+    
+}
+
+
+footer {
+    background-color: #6b4f4f;
+    color: #eacbcb;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
